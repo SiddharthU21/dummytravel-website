@@ -1,0 +1,254 @@
+/* Css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Css variables  */
+:root{
+   --navbar-height: 59px ;
+}
+
+/* Navigation bar  */
+#navbar{
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-family: 'Dosis', sans-serif;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgba(82, 13, 1, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#logo{
+    margin: 5px 32px;
+
+}
+
+#logo img{
+     margin: 3px 3px;
+     height: 80px;
+     width: 80px;
+}
+
+/* Nvbar list styling */
+#navbar ul{
+     display: flex;
+
+}
+
+
+#navbar ul li{
+    list-style : none;
+   
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 37px 31px;
+    /* border-radius: 22px; */
+    font-size: 1.289rem;
+    transition: box-shadow 200ms ease-in-out ;
+
+}
+#navbar ul li a:hover{
+    box-shadow: inset 0px -3px rgba(149, 245, 130, 0.966);   
+}
+
+
+
+/* Home section  */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 551px;
+}
+
+
+#Home::before{
+    top: 0px;
+    left: 0px;
+    content: "";
+    background: url(ogbg.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 657px;
+    width : 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Home h1{
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+#Home p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+
+/* Services Section  */
+
+.servcontainer{
+     display: flex;
+     flex-direction: column;
+      height: 548px;
+}
+
+#services{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.servcontainer h1{
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 5px 3px rgb(26,142,176);
+
+}
+
+
+#services .box{
+    display: flex;
+    flex-direction: column ;
+    text-align:center;
+    justify-content: space-evenly;
+    height: 378px;
+    width: 493px;
+    background-color: rgb(254 221 190);
+    box-shadow: 13px 8px rgb(241,127,118)
+}
+
+#services .box h2{
+    font-family: 'Dosis', sans-serif;
+
+}
+
+#services .box p{
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+#services .box img{
+   align-self: center;
+    height: 120px;
+    width: 120px;
+}
+
+/* Sponsors Section  */
+
+#sponsorcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    
+}
+#sponsorcontainer h1{
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 5px 3px rgba(149, 245, 130, 0.966);
+
+    
+}
+
+#sponsors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.spoitem img{
+    height: 200px;
+    width: 200px;
+    padding: 27px;
+    margin: 3px;
+}
+
+#sponsorcontainer::before{
+    content: "";
+    background: url(bg\ og\ 2.png)no-repeat center center/cover;
+    position: absolute;
+    height: 450px;
+    width : 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility class  */
+.btn{
+margin: 7px;
+padding: 4px 13px;
+font-family: 'Dosis', sans-serif;
+     font-size: 1.2rem;
+     border: none;
+     background-color: white;
+     color: black;
+     border-radius: 8px;
+     transition: background-color 200ms ease-in-out ;
+}
+
+.btn:hover{
+     background-color: rgba(149, 245, 130, 0.966);
+     cursor: pointer;
+     
+
+}
+
+.prim-h{
+       font-size: 4rem;
+       padding: 15px;
+
+}
+.seco-h{
+       font-size: 2rem;
+       padding: 7.5px;
+
+}
+
+.center{
+    text-align : center;
+}

@@ -1,0 +1,82 @@
+
+/* Navigation bar  */
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1.2rem;
+    padding: 41px 12px;
+}
+
+
+
+
+
+/* Home section  */
+
+#Home {
+    height: 452px;
+    padding: 3px 53px;
+}
+#Home::before{
+     height: 660px;
+}
+
+
+
+#Home p{
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+/* Services Section  */
+#services{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.servcontainer{
+    height: 1380px;
+}
+
+#services .box{
+    margin: 12px 0px;
+    width: 289px;
+    height: 404px;
+}
+
+/* Sponsors Section  */
+
+#sponsors{
+    flex-wrap: wrap;
+}
+
+#sponsorcontainer::before{
+     height: 815px;
+}
+
+.spoitem img{
+    height: 120px;
+    width: 120px;
+}
+
+
+/* Utility class  */
+
+.prim-h{
+    font-size: 2.2rem;
+}
+
+.btn{
+    font-size: 0.8rem;
+}
